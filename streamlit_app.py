@@ -6,7 +6,7 @@ st.set_page_config(page_title="Watchlist Live", layout="wide")
 st.title("🔔 Señales en Tiempo Real desde TradingView")
 
 try:
-    res = requests.get("https://TU-APP-RENDER.onrender.com/watchlist")  # Cambia esta URL tras desplegar
+    res = requests.get("https://tradingview-webhook-watchlist.onrender.com")  # Cambia esta URL tras desplegar
     data = res.json()
     df = pd.DataFrame(data)
 
